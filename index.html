@@ -4,47 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Inscripción</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 
 <body>
     
-<h1>C.A. UNIVERSAL<h1>
+    <h1>C.A. UNIVERSAL</h1>
 
-<h2>FICHA DE INSCRIPCION</h2>
-
-<form action="#" method="post">
+    <h2>FICHA DE INSCRIPCION</h2>
 
     <!-- Formulario de Inscripción -->
 <form action="#" method="post">
 
-    
-<!-- Search by Name -->
-    
-  
-<label for="search_name">Buscar por Nombre:</label>
-    
-   
-<input type="text" id="search_name" name="search_name" placeholder="Nombre">
-
-    
-
-  
-<!-- Search by Last Name -->
-    <label for="search_last_name">Buscar por Apellido:</label>
-    
-   
-<input type="text" id="search_last_name" name="search_last_name" placeholder="Apellido">
-
-    
-
-  
-<!-- Search by ID -->
-    <label for="search_id">Buscar por Cédula:</label>
-    
-   
-<input type="text" id="search_id" name="search_id" placeholder="Cédula">
 
 
     <!-- Categoría -->
@@ -220,10 +193,10 @@
     <!-- Anexo de Documentación -->
     <h3>E) Anexo de Documentación IMPORTANTE</h3>
     <label for="documento_identidad">Fotocopia Cédula de Identidad</label>
-    <input type="file" id="documento_identidad" name="documento_identidad" accept=".pdf, .jpg, .jpeg, .png" required>
+<input type="file" id="documento_identidad" name="documento_identidad" accept=".pdf, .jpg, .jpeg, .png" required>
 
-    <label for="documento_identidad">Certificado aptitud_fisica</label>
-    <input type="file" id="documento_identidad" name="documento_identidad" accept=".pdf, .jpg, .jpeg, .png" required>
+<label for="certificado_aptitud_fisica">Certificado aptitud física</label>
+<input type="file" id="certificado_aptitud_fisica" name="certificado_aptitud_fisica" accept=".pdf, .jpg, .jpeg, .png" required>
 
     <!-- Firmas -->
     <h3>FIRMAS:</h3>
@@ -236,6 +209,12 @@
     <!-- Botón de enviar -->
     <input type="submit" value="Enviar">
 
+</form>
+<form>
+    <div id="mensajeExito" style="display: none;">
+    <p>Gracias por enviar el formulario con éxito.</p>
+</div>
+        
 </form>
     <script src="/javaScript/formulario.js"></script>
 </body>
