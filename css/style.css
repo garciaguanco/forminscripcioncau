@@ -192,6 +192,7 @@ body {
   }
 
   /* Personalización del Navbar */
+
   body {
     display: flex;
     flex-direction: column;
@@ -280,6 +281,17 @@ body {
     color: lightgreen;
     background-color: white;
   }
+
+  /* Estilos para el botón de menú */
+.menu {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu img {
+  width: 30px; /* Ajusta el tamaño de la imagen según sea necesario */
+}
   
 
   /* fonts */
@@ -418,3 +430,12 @@ body {
     border-radius: 30px;
     border: dashed 3px white;
   }
+
+  menu {
+    padding: 10px 15px; /* Ajusta el relleno para una apariencia más espaciada en pantallas pequeñas */
+}
+
+.menu img {
+    width: 25px; /* Reduce el tamaño de la imagen en pantallas pequeñas */
+}
+}
