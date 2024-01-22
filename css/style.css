@@ -191,6 +191,97 @@ body {
     color: green;
   }
 
+  /* Personalización del Navbar */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .input__menu {
+    display: none;
+  }
+  
+  header {
+    width: 100%;
+    height: 99px;
+    
+    top: 0;
+    right: 0;
+    z-index: 5000;
+    grid-area: header;
+  }
+  
+  .header__container {
+    max-width: 1500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0px 20px;
+  }
+  
+  .header__logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__logo img {
+    width: 75px;
+  }
+  .header__logo img:last-child {
+    display: none;
+  }
+  .header__logo:hover img:last-child {
+    display: block;
+  }
+  .header__logo:hover img:first-child {
+    display: none;
+  }
+  
+  .header__nav {
+    position: relative;
+    height: 100%;
+  }
+  .header__nav li {
+    margin: 40px;
+    list-style: none;
+  }
+  .header__nav a {
+    color: white;
+    font-size: 14px;
+  }
+  .header__nav a:hover {
+    color: lightgreen;
+  }
+  
+  nav {
+    height: 100%;
+  }
+  nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .li__select {
+    background-color: lightgreen;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 20px;
+  }
+  .li__select:hover {
+    color: lightgreen;
+    background-color: white;
+  }
+  
+
   /* fonts */
 
   body{margin:0px;padding:0px;font-family:Verdana,Arial;font-size:12px}
@@ -219,29 +310,111 @@ body {
 
 /* Mobile */
 
-@media only screen and (max-width: 768px) {
-  form {
-      max-width: 100%;
-        
-      
-
- 
-padding: 10px; /* Ajusta el relleno para dispositivos móviles */
-    }
-
-    
-    }
-
-
-   
-input[type="submit"] {
-        
-       
-width: 100%; /* Hace que el botón de enviar ocupe todo el ancho en dispositivos móviles */
-    }
-}
-
-   
-    
-
-
+@media (min-width: 0px) and (max-width: 767px) {
+  .header__nav {
+    background-color: green;
+    margin-top: 0px;
+    margin-right: 0%;
+    width: 60%;
+    height: 1000px;
+    display: none;
+  }
+  .header__nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: -6%;
+    margin-right: 0px;
+    width: 80vw;
+    height: auto;
+    padding: 0%;
+  }
+  .header__nav ul a {
+    font-size: 25px;
+  }
+  .header__nav li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .header__nav li:first-child {
+    margin-top: 40%;
+  }
+  .li__select {
+    padding: 0px 0px;
+  }
+  .header__container {
+    padding-right: 0px;
+  }
+  .menu {
+    width: 200px;
+    appearance: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .menu img {
+    width: 90%;
+    height: 50%;
+  }
+  .input__menu {
+    appearance: none;
+  }
+  .input__menu:checked + .header__nav {
+    display: block;
+  }
+  .img-1 {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    border: dashed 3px white;
+  }
+  .container {
+    width: 100%;
+  }
+  .contact .contact__box {
+    width: 90vw;
+  }
+  .contact .contact__box form textarea {
+    height: 45%;
+  }
+  .contact img {
+    display: none;
+  }
+  h2 {
+    padding: 20%;
+  }
+  .imgn-1 {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    border: dashed 3px white;
+  }
+  .imgn-2 {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    border: dashed 3px white;
+  }
+  .imgn-3 {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    border: dashed 3px white;
+  }
