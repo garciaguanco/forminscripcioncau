@@ -48,7 +48,7 @@
 
     <!-- Contenido de la página -->
     <div class="container">
-    <form>
+    <form action="/php/conecta.php" method="POST" onsubmit="return confirmSubmit()">
         <div>
     
     <h1>C.A. UNIVERSAL</h1>
@@ -58,7 +58,7 @@
 </form>
 
     <!-- Formulario de Inscripción -->
-<form action="#" method="post" onsubmit="return confirmSubmit()">
+<form action="/php/conecta.php" method="POST" onsubmit="return confirmSubmit()">
 
 
 
@@ -66,22 +66,22 @@
     <h3>A) CATEGORIA:</h3>
     <div class="categoria-container">
     <label for="categoria_mosquitos">MOSQUITOS (5 a 7 años)</label>
-    <input type="radio" name="categoria" id="categoria_mosquitos" required>
+    <input type="radio" name="categoria" id="categoria_mosquitos" >
     
     <label for="categoria_pre_mini">PRE-MINI (8 a 10 años)</label>
-    <input type="radio" name="categoria" id="categoria_pre_mini" required>
+    <input type="radio" name="categoria" id="categoria_pre_mini" >
 
     <label for="categoria_pre_mini">MINI (U12)</label>
-    <input type="radio" name="categoria" id="categoria_pre_mini" required>
+    <input type="radio" name="categoria" id="categoria_pre_mini" >
 
     <label for="categoria_pre_mini">U14</label>
-    <input type="radio" name="categoria" id="categoria_pre_mini" required>
+    <input type="radio" name="categoria" id="categoria_pre_mini" >
 
     <label for="categoria_pre_mini">U16</label>
-    <input type="radio" name="categoria" id="categoria_pre_mini" required>
+    <input type="radio" name="categoria" id="categoria_pre_mini" >
 
     <label for="categoria_pre_mini">U18</label>
-    <input type="radio" name="categoria" id="categoria_pre_mini" required>
+    <input type="radio" name="categoria" id="categoria_pre_mini" >
 </div>
 
     <!-- Otros campos -->
@@ -92,25 +92,25 @@
     <!-- B) DATOS DEL NIÑO/A - ADOLESCENTE -->
 
 <label for="apellidos">Apellidos:</label>
-<input type="text" id="apellidos" name="apellidos" required>
+<input type="text" id="apellidos" name="apellidos" >
 
 <label for="nombres">Nombres:</label>
-<input type="text" id="nombres" name="nombres" required>
+<input type="text" id="nombres" name="nombres" >
 
 <label for="lugar_nacimiento">Lugar de Nacimiento:</label>
-<input type="text" id="lugar_nacimiento" name="lugar_nacimiento" required>
+<input type="text" id="lugar_nacimiento" name="lugar_nacimiento" >
 
 <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" >
 
 <label for="cedula_identidad">Cédula de Identidad:</label>
-<input type="text" id="cedula_identidad" name="cedula_identidad" required>
+<input type="text" id="cedula_identidad" name="cedula_identidad" >
 
 <label for="domicilio">Domicilio:</label>
-<input type="text" id="domicilio" name="domicilio" required>
+<input type="text" id="domicilio" name="domicilio" >
 
 <label for="numero_puerta">Nro. de Puerta:</label>
-<input type="text" id="numero_puerta" name="numero_puerta" required>
+<input type="text" id="numero_puerta" name="numero_puerta" >
 
 <label for="apto">Apto:</label>
 <input type="text" id="apto" name="apto">
@@ -153,34 +153,34 @@
 <h3>El Niño/a - Adolescente vive con: MADRE/TUTOR</h3>
 
 <label for="madre_tutor_apellidos">Apellidos:</label>
-<input type="text" id="madre_tutor_apellidos" name="madre_tutor_apellidos" required>
+<input type="text" id="madre_tutor_apellidos" name="madre_tutor_apellidos" >
 
 <label for="madre_tutor_nombres">Nombres:</label>
-<input type="text" id="madre_tutor_nombres" name="madre_tutor_nombres" required>
+<input type="text" id="madre_tutor_nombres" name="madre_tutor_nombres" >
 
 <label for="madre_tutor_lugar_nacimiento">Lugar de Nacimiento:</label>
-<input type="text" id="madre_tutor_lugar_nacimiento" name="madre_tutor_lugar_nacimiento" required>
+<input type="text" id="madre_tutor_lugar_nacimiento" name="madre_tutor_lugar_nacimiento" >
 
 <label for="madre_tutor_fecha_nacimiento">Fecha de Nacimiento:</label>
-<input type="date" id="madre_tutor_fecha_nacimiento" name="madre_tutor_fecha_nacimiento" required>
+<input type="date" id="madre_tutor_fecha_nacimiento" name="madre_tutor_fecha_nacimiento" >
 
 <label for="madre_tutor_cedula_identidad">Cédula de Identidad:</label>
-<input type="text" id="madre_tutor_cedula_identidad" name="madre_tutor_cedula_identidad" required>
+<input type="text" id="madre_tutor_cedula_identidad" name="madre_tutor_cedula_identidad" >
 
 <label for="madre_tutor_domicilio">Domicilio:</label>
-<input type="text" id="madre_tutor_domicilio" name="madre_tutor_domicilio" required>
+<input type="text" id="madre_tutor_domicilio" name="madre_tutor_domicilio" >
 
 <label for="madre_tutor_numero_puerta">Nro. de Puerta:</label>
-<input type="text" id="madre_tutor_numero_puerta" name="madre_tutor_numero_puerta" required>
+<input type="text" id="madre_tutor_numero_puerta" name="madre_tutor_numero_puerta" >
 
 <label for="madre_tutor_apto">Apto:</label>
 <input type="text" id="madre_tutor_apto" name="madre_tutor_apto">
 
 <label for="madre_tutor_telefono">Telefono de Contacto:</label>
-<input type="tel" id="madre_tutor_telefono" name="madre_tutor_telefono" required>
+<input type="tel" id="madre_tutor_telefono" name="madre_tutor_telefono" >
 
 <label for="madre_tutor_email">e-mail:</label>
-<input type="email" id="madre_tutor_email" name="madre_tutor_email" required>
+<input type="email" id="madre_tutor_email" name="madre_tutor_email" >
 
     <h4>PADRE/TUTOR</h4>
     <!-- ... (campos de la madre/tutor) -->
@@ -194,13 +194,13 @@
 <input type="text" id="nombres" name="nombres" required>
 
 <label for="lugar_nacimiento">Lugar de Nacimiento:</label>
-<input type="text" id="lugar_nacimiento" name="lugar_nacimiento" required>
+<input type="text" id="lugar_nacimiento" name="lugar_nacimiento" >
 
 <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" >
 
 <label for="cedula_identidad">Cédula de Identidad:</label>
-<input type="text" id="cedula_identidad" name="cedula_identidad" required>
+<input type="text" id="cedula_identidad" name="cedula_identidad" r>
 
 <!-- Dirección -->
 <h3>Dirección</h3>
