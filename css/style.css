@@ -1,14 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(150deg, #0E8A35, #10BF0D);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(150deg, #0e8a35, #10bf0d);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header__container {
@@ -16,42 +17,44 @@ body {
   background-color: rgba(0, 0, 0, 0); /* Fondo completamente transparente */
   align-items: center;
   padding: 10px;
+  max-width: 1500px;
+  margin: auto;
+  justify-content: space-between;
 }
 
 .container {
   max-width: 800px;
   margin: 20px auto;
+  padding: 20px;
 }
-
-
 
 form {
-    max-width: 600px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-h1, h2, h3, h4 {
-    color: #5337BA;
-    
+h1,
+h2,
+h3,
+h4 {
+  color: #5337ba;
 }
 
 h1 {
-    color: #5337BA;
-    width: 100%;
-    text-align: center;
+  color: #5337ba;
+  width: 100%;
+  text-align: center;
 }
 
-
-
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 input[type="text"],
@@ -60,256 +63,255 @@ input[type="tel"],
 input[type="email"],
 textarea,
 select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
+
+
 
 input[type="radio"] {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
+
 fieldset {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 legend {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 input[type="submit"] {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
-h2, h3 {
-    text-align: center;
-    color: #5337BA ;
+h2,
+h3 {
+  text-align: center;
+  color: #5337ba;
 }
-
-
 
 .categoria-container {
-    
-    text-align: left;
+  text-align: left;
 }
-
-
 
 /* inicio de sesion */
 
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    font-family: "lato", sans-serif;
-  }
-
-  .signupFrm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-  form {
-    background-color: white;
-    width: 400px;
-    border-radius: 8px;
-    padding: 20px 40px;
-    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
-  }
-  
-  .title {
-    font-size: 50px;
-    margin-bottom: 50px;
-  }
-
-  .inputContainer {
-    position: relative;
-    height: 45px;
-    width: 90%;
-    margin-bottom: 17px;
-  }
-
-  .input {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    border: 1px solid #DADCE0;
-    border-radius: 7px;
-    font-size: 16px;
-    padding: 0 20px;
-    outline: none;
-    background: none;
-    z-index: 1;
-  }
-
-  ::placeholder {
-    color: transparent;
-  }
-
-  .label {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    padding: 0 4px;
-    background-color: white;
-    color: #DADCE0;
-    font-size: 16px;
-    transition: 0.5s;
-    z-index: 0;
-  }
-
-  .submitBtn {
-    display: block;
-    margin-left: auto;
-    padding: 15px 30px;
-    border: none;
-    background-color: green;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 30px;
-  }
-  
-  .submitBtn:hover {
-    background-color: green;
-    transform: translateY(-2px);
-  }
-
-  .input:focus + .label {
-    top: -7px;
-    left: 3px;
-    z-index: 10;
-    font-size: 14px;
-    font-weight: 600;
-    color: green;
-  }
-
-  /* Personalización del Navbar */
-
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-  }
-  
-  .menu {
-    display: none;
-  }
-  
-  .input__menu {
-    display: none;
-  }
-
-  .menu img {
-    width: 30px;
-    cursor: pointer;
-}
-  
-  header {
-    width: 100%;
-    height: 99px;
-    
-    top: 0;
-    right: 0;
-    z-index: 5000;
-    grid-area: auto;
-  }
-  
-  .header__container {
-    max-width: 1500px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    padding: 0px 20px;
-  }
-  
-  .header__logo {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .header__logo img {
-    width: 80px;
-  }
-  .header__logo img:last-child {
-    display: none;
-  }
-  .header__logo:hover img:last-child {
-    display: block;
-  }
-  .header__logo:hover img:first-child {
-    display: none;
-  }
-  
-  .header__nav {
-    position: relative;
-    height: 100%;
-  }
-
-  .header__nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "lato", sans-serif;
 }
 
-  .header__nav li {
-    margin-right: 20px;
-    list-style: none;
-  }
-  .header__nav a {
-    color: white;
-    font-size: 14px;
-  }
-  .header__nav a:hover {
-    color: lightgreen;
-  }
-  
-  nav {
-    height: 100%;
-  }
-  nav ul {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .li__select {
-    background-color: lightgreen;
-    padding: 10px 30px;
-    color: white;
-    border-radius: 20px;
-  }
-  .li__select:hover {
-    color: lightgreen;
-    background-color: white;
-  }
+.signupFrm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  /* Estilos para el botón de menú */
+form {
+  background-color: white;
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.inputContainer {
+  position: relative;
+  height: 45px;
+  width: 90%;
+  margin-bottom: 17px;
+}
+
+.input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #dadce0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+
+::placeholder {
+  color: transparent;
+}
+
+.label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: white;
+  color: #dadce0;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.submitBtn {
+  display: block;
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.submitBtn:hover {
+  background-color: green;
+  transform: translateY(-2px);
+}
+
+.input:focus + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: green;
+}
+
+/* Personalización del Navbar */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.menu {
+  display: none;
+}
+
+.input__menu {
+  display: none;
+}
+
+.menu img {
+  width: 30px;
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  height: 99px;
+
+  top: 0;
+  right: 0;
+  z-index: 5000;
+  grid-area: auto;
+}
+
+.header__container {
+  max-width: 1500px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+.header__logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo img {
+  width: 80px;
+}
+.header__logo img:last-child {
+  display: none;
+}
+.header__logo:hover img:last-child {
+  display: block;
+}
+.header__logo:hover img:first-child {
+  display: none;
+}
+
+.header__nav {
+  position: relative;
+  height: 100%;
+}
+
+.header__nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.header__nav li {
+  margin-right: 20px;
+  list-style: none;
+}
+.header__nav a {
+  color: white;
+  font-size: 14px;
+}
+.header__nav a:hover {
+  color: lightgreen;
+}
+
+nav {
+  height: 100%;
+}
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.li__select {
+  background-color: lightgreen;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 20px;
+}
+.li__select:hover {
+  color: lightgreen;
+  background-color: white;
+}
+
+/* Estilos para el botón de menú */
 .menu {
   display: block;
   cursor: pointer;
@@ -319,156 +321,201 @@ body {
 .menu img {
   width: 30px; /* Ajusta el tamaño de la imagen según sea necesario */
 }
-  
 
-  /* fonts */
+/* fonts */
 
-  body{margin:0px;padding:0px;font-family:Verdana,Arial;font-size:12px}
-#wrapper{width:1000px;margin-left:auto;margin-right:auto;border:1px solid #eeeeee;border-top:0}
-#title{float:left;width:680px;margin:20px 0 20px 20px;font-size:60px;white-space:nowrap;overflow:hidden}
-#logo{float:right;margin:25px 20px 20px 0}
-#logo img{border:0}
-#menu,#footer{background:#eeeeee}
-#menu ul{padding:0;margin:0}
-#menu li{list-style-type:none}
-#menu li a{padding:5px 20px 5px 20px;float:left;color:black;text-decoration:none;font-weight:bold}
-#menu li a:hover{background:#d7d7d7}
-#menu li.selected a{background:#002957;color:white}
-#content{padding:20px}
-#glyphs{float:left;margin-bottom:-20px !important}
-#glyphs .g{width:89px;float:left;text-align:center;padding:0 3px 0 3px;border-right:1px solid #eeeeee;white-space:nowrap;overflow:hidden;margin-bottom:20px;min-height:100px}
-.noborder{border:0 !important}
-#glyphs p{font-size:60px;padding:0;margin:10px 0 0 0}
-#footer {padding:5px 20px 5px 20px}
-#footer a{color:black}
-#copyright{float:left;white-space:nowrap;overflow:hidden;width:730px}
-#generated{float:right}
-#support{width:1000px;margin-left:auto;margin-right:auto;padding:5px 0 20px 40px;color:#9f9f9f}
-.clr{clear:both}
-
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Arial;
+  font-size: 12px;
+}
+#wrapper {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+}
+#title {
+  float: left;
+  width: 680px;
+  margin: 20px 0 20px 20px;
+  font-size: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#logo {
+  float: right;
+  margin: 25px 20px 20px 0;
+}
+#logo img {
+  border: 0;
+}
+#menu,
+#footer {
+  background: #eeeeee;
+}
+#menu ul {
+  padding: 0;
+  margin: 0;
+}
+#menu li {
+  list-style-type: none;
+}
+#menu li a {
+  padding: 5px 20px 5px 20px;
+  float: left;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+#menu li a:hover {
+  background: #d7d7d7;
+}
+#menu li.selected a {
+  background: #002957;
+  color: white;
+}
+#content {
+  padding: 20px;
+}
+#glyphs {
+  float: left;
+  margin-bottom: -20px !important;
+}
+#glyphs .g {
+  width: 89px;
+  float: left;
+  text-align: center;
+  padding: 0 3px 0 3px;
+  border-right: 1px solid #eeeeee;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 20px;
+  min-height: 100px;
+}
+.noborder {
+  border: 0 !important;
+}
+#glyphs p {
+  font-size: 60px;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+#footer {
+  padding: 5px 20px 5px 20px;
+}
+#footer a {
+  color: black;
+}
+#copyright {
+  float: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 730px;
+}
+#generated {
+  float: right;
+}
+#support {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 0 20px 40px;
+  color: #9f9f9f;
+}
+.clr {
+  clear: both;
+}
 
 /* Mobile */
 
-@media (min-width: 0px) and (max-width: 768px) {
-  .header__nav {
-    background-color: green;
-    margin-top: 10px;
-    margin-right: 0%;
-    width: 60%;
-    height: 1000px;
-    display: none;
+@media only screen and (max-width: 1024px) {
+  body {
+      font-size: 14px;
   }
-  .header__nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: -6%;
-    margin-right: 0px;
-    width: 80vw;
-    height: auto;
-    padding: 0%;
-  }
-  .header__nav ul a {
-    font-size: 25px;
-  }
-  .header__nav li {
-    margin-top: 15px;
-    margin-right: 0;
-    margin-bottom: 10px;
-    width: 25px;
-  }
-  .header__nav li:first-child {
-    margin-top: 40%;
-  }
-  .li__select {
-    padding: 0px 0px;
-  }
+
+  /* Estilos específicos para pantallas más pequeñas */
   .header__container {
-    padding-right: 0px;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0); /* Fondo completamente transparente */
+      padding: 10px;
   }
-  .menu {
-    width: 200px;
-    appearance: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+
+  .header__logo img {
+      max-width: 100px;
   }
-  .menu img {
-    width: 25px;
-    height: 50%;
+
+  .container {
+      max-width: 800px; /* Ajusta según sea necesario */
+      margin: 0 auto; /* Centra el contenedor en la pantalla */
+      padding: 20px; /* Ajusta según sea necesario */
   }
-  .input__menu {
-    appearance: none;
-  }
-  .input__menu:checked + .header__nav {
-    display: block;
-  }
-  .img-1 {
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 30px;
-    border: dashed 3px white;
+
+  .container {
+      padding: 2%; /* Utiliza un porcentaje en lugar de píxeles */
   }
   .container {
-    max-width: 100%;
-    padding: 0 10px; /* Ajusta el relleno según sea necesario */
-  }
-  .contact .contact__box {
-    width: 90vw;
-  }
-  .contact .contact__box form textarea {
-    height: 45%;
-  }
-  .contact img {
-    display: none;
-  }
-  h2 {
-    padding: 20%;
-  }
-  .imgn-1 {
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 30px;
-    border: dashed 3px white;
-  }
-  .imgn-2 {
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 30px;
-    border: dashed 3px white;
-  }
-  .imgn-3 {
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 30px;
-    border: dashed 3px white;
+      padding: 5px; /* Ajusta según sea necesario para pantallas pequeñas */
   }
 
-  menu {
-    padding: 10px 15px; /* Ajusta el relleno para una apariencia más espaciada en pantallas pequeñas */
+  .container {
+      display: flex;
+      flex-direction: column; /* Ajusta según sea necesario */
+  }
+
+  /* Otros estilos específicos para pantallas más pequeñas */
+
+  /* Ajustes para el formulario */
+  form {
+      max-width: 90%;
+      margin: 0 auto;
+  }
+
+  .menu {
+      display: block;
+      cursor: pointer;
+  }
+
+  .header__nav {
+      display: none;
+  }
+
+  .input__menu:checked + .header__nav {
+      display: block;
+  }
+
+  .menu img {
+      width: 30px; /* Ajusta según sea necesario */
+      height: auto;
+  }
+
+  /* Ajustes para los campos de entrada */
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"],
+  input[type="email"],
+  textarea,
+  select {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+  }
+
+  /* Otros estilos para los campos del formulario */
+
+  /* Ajustes para los botones */
+  input[type="submit"],
+  button {
+      width: 100%;
+  }
+
+  /* Otros estilos para los botones */
 }
 
-.menu img {
-    width: 25px; /* Reduce el tamaño de la imagen en pantallas pequeñas */
-}
+/* Ajustes para dispositivos móviles (iPhone, por ejemplo) */
+@media only screen and (max-width: 480px) {
+  .container {
+      max-width: 100%; /* Ajusta según sea necesario para dispositivos móviles */
+      padding: 10px; /* Ajusta según sea necesario para dispositivos móviles */
+  }
 }

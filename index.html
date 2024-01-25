@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Inscripción</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="fonts/Open_Sans_Bold/stylesheet.css">
    
 
 
 </head>
 
-<body>
+<body> 
 
     <!-- Navbar-->
     <header>
@@ -57,8 +57,7 @@
 </div>
 </form>
 
-    <!-- Formulario de Inscripción -->
-<form action="/php/conecta.php" method="POST" onsubmit="return confirmSubmit()">
+   
 
 
 
@@ -107,13 +106,14 @@
 <input type="text" id="cedula_identidad" name="cedula_identidad" >
 
 <label for="domicilio">Domicilio:</label>
-<input type="text" id="domicilio" name="domicilio" >
+<input type="text" id="domicilio" name="domicilio">
 
 <label for="numero_puerta">Nro. de Puerta:</label>
-<input type="text" id="numero_puerta" name="numero_puerta" >
+<input type="text" id="numero_puerta" name="numero_puerta">
 
 <label for="apto">Apto:</label>
 <input type="text" id="apto" name="apto">
+
 
 <label for="barrio">Barrio:</label>
 <input type="text" id="barrio" name="barrio">
@@ -130,8 +130,8 @@
 <label for="vencimientos">Vencimientos de vacunas:</label>
 <input type="text" id="vencimientos" name="vencimientos">
 
-<label for="aptitud_fisica">Aptitud Física:</label>
-<input type="text" id="aptitud_fisica" name="aptitud_fisica">
+<label for="certificado_aptitud_fisica">Certificado aptitud física</label>
+<input type="file" id="certificado_aptitud_fisica" name="certificado_aptitud_fisica" accept=".pdf, .jpg, .jpeg, .png">
 
 <label for="otra_actividad">Realiza otra actividad Deportiva:</label>
 <input type="radio" id="otra_actividad_si" name="otra_actividad" value="SI">
@@ -167,14 +167,14 @@
 <label for="madre_tutor_cedula_identidad">Cédula de Identidad:</label>
 <input type="text" id="madre_tutor_cedula_identidad" name="madre_tutor_cedula_identidad" >
 
-<label for="madre_tutor_domicilio">Domicilio:</label>
-<input type="text" id="madre_tutor_domicilio" name="madre_tutor_domicilio" >
+<label for="domicilio">Domicilio:</label>
+<input type="text" id="domicilio" name="domicilio">
 
-<label for="madre_tutor_numero_puerta">Nro. de Puerta:</label>
-<input type="text" id="madre_tutor_numero_puerta" name="madre_tutor_numero_puerta" >
+<label for="numero_puerta">Nro. de Puerta:</label>
+<input type="text" id="numero_puerta" name="numero_puerta">
 
-<label for="madre_tutor_apto">Apto:</label>
-<input type="text" id="madre_tutor_apto" name="madre_tutor_apto">
+<label for="apto">Apto:</label>
+<input type="text" id="apto" name="apto">
 
 <label for="madre_tutor_telefono">Telefono de Contacto:</label>
 <input type="tel" id="madre_tutor_telefono" name="madre_tutor_telefono" >
@@ -188,10 +188,10 @@
 <h3>Información Personal</h3>
 
 <label for="apellidos">Apellidos:</label>
-<input type="text" id="apellidos" name="apellidos" required>
+<input type="text" id="apellidos" name="apellidos" >
 
 <label for="nombres">Nombres:</label>
-<input type="text" id="nombres" name="nombres" required>
+<input type="text" id="nombres" name="nombres" >
 
 <label for="lugar_nacimiento">Lugar de Nacimiento:</label>
 <input type="text" id="lugar_nacimiento" name="lugar_nacimiento" >
@@ -206,10 +206,10 @@
 <h3>Dirección</h3>
 
 <label for="domicilio">Domicilio:</label>
-<input type="text" id="domicilio" name="domicilio" required>
+<input type="text" id="domicilio" name="domicilio">
 
 <label for="numero_puerta">Nro. de Puerta:</label>
-<input type="text" id="numero_puerta" name="numero_puerta" required>
+<input type="text" id="numero_puerta" name="numero_puerta">
 
 <label for="apto">Apto:</label>
 <input type="text" id="apto" name="apto">
@@ -218,35 +218,35 @@
 <h3>Información de Contacto</h3>
 
 <label for="telefono_contacto">Teléfono de Contacto:</label>
-<input type="tel" id="telefono_contacto" name="telefono_contacto" required>
+<input type="tel" id="telefono_contacto" name="telefono_contacto" >
 
 <label for="email">e-mail:</label>
-<input type="email" id="email" name="email" required>
+<input type="email" id="email" name="email" >
 
 
     <!-- Autorización para fotografías y/o publicaciones en redes sociales -->
     <h3>D) Autorización y consentimiento</h3>
     <label for="autorizacion_si">SÍ</label>
-    <input type="radio" name="autorizacion" id="autorizacion_si" required>
+    <input type="radio" name="autorizacion" id="autorizacion_si" >
 
     <label for="autorizacion_no">NO</label>
-    <input type="radio" name="autorizacion" id="autorizacion_no" required>
+    <input type="radio" name="autorizacion" id="autorizacion_no" >
 
     <!-- Anexo de Documentación -->
     <h3>E) Anexo de Documentación IMPORTANTE</h3>
     <label for="documento_identidad">Fotocopia Cédula de Identidad</label>
-<input type="file" id="documento_identidad" name="documento_identidad" accept=".pdf, .jpg, .jpeg, .png" required>
+<input type="file" id="documento_identidad" name="documento_identidad" accept=".pdf, .jpg, .jpeg, .png" >
 
 <label for="certificado_aptitud_fisica">Certificado aptitud física</label>
-<input type="file" id="certificado_aptitud_fisica" name="certificado_aptitud_fisica" accept=".pdf, .jpg, .jpeg, .png" required>
+<input type="file" id="certificado_aptitud_fisica" name="certificado_aptitud_fisica" accept=".pdf, .jpg, .jpeg, .png" 
 
     <!-- Firmas -->
     <h3>FIRMAS:</h3>
     <label for="firma_padres">Padres o Tutores:</label>
-    <input type="text" id="firma_padres" name="firma_padres" required>
+    <input type="text" id="firma_padres" name="firma_padres" >
 
     <label for="aclaracion">Aclaración:</label>
-    <input type="text" id="aclaracion" name="aclaracion" required>
+    <input type="text" id="aclaracion" name="aclaracion" >
 
     <!-- Botón de enviar -->
     <input type="submit" value="Enviar">
@@ -263,6 +263,6 @@
 </form>
 
     
-    <script src="/javaScript/formulario.js"></script>
+<script src="/javaScript/formulario.js"></script>
 </body>
 </html>
